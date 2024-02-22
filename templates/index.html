@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dvd.ico') }}" type="image/x-icon">
+    <title>D.V.D - Beranda</title>
+</head>
+<body>
+    <div class="navbar">
+    <div class="brand"><a href="">DVD</a></div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu">
+      <a href="{{ url_for('spam') }}">Spam Tools</a>
+      <a href="">Cooming Soon All Tools</a>
+    </div>
+  </div>
+  <h3 class="container">Sekedar Info</h3>
+    <div class="news-container">
+    <div class="news-article">
+      <img src="{{ url_for('static', filename='subrek.png') }}" alt="Subrek Ya Kawand² Makasih Kalo Udh Subrek Mah.">
+      <h2>Youtube Dii37</h2>
+      <p>Jangan Lupa Subscribe Dii37 Biar Ngga Ketinggalan Update Yang Menarik.</p>
+      <a href="https://youtube.com/@oranginisiald">Link Here.</a>
+    </div>
+
+    <div class="news-article">
+      <img src="{{ url_for('static', filename='promosi.png') }}" alt="Info Update">
+      <h2>Dell Store</h2>
+      <p>Menyediakan Perlengkapan Cheat Mulai Dari CPM, 8BP, GTA V, Roblox, Dll.</p>
+      <a href="https://www.instagram.com/dellstorecpm">Link Here.</a>
+    </div>
+  </div>
+
+    <div class="news-article">
+      <img src="{{ url_for('static', filename='updates.png') }}" alt="Info Update">
+      <h2>Info Update</h2>
+      <p>Update Kali Ini Mengandalkan Web Localhost Untuk Terlihat Tidak Membosankan.</p>
+      <a href="">Mau Apa Banh...</a>
+    </div>
+  </div>
+    
+  <footer class="footer">
+            <section class="right-content">
+               <div class="legal-content">
+                  <a href="{{ url_for('syarat') }}" class="legal-content__text">Syarat & Ketentuan</a>
+                  <p class="legal-content__copyright">&copy; Copyright 2024 - Dii</p>
+               </div>
+            </section>
+         </div>
+      </div>
+   </footer>
+  <script>
+    function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+}
+  </script> 
+</body>
+</html>
